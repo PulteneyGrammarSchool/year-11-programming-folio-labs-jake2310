@@ -29,11 +29,11 @@ clock = pygame.time.Clock()
 while not done:
 
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: 
-            done = True  
+        if event.type == pygame.QUIT:
+            done = True
         elif event.type == pygame.MOUSEBUTTONDOWN:
             print("User pressed a mouse button")
-            print(pygame.mouse.get_pos()
+            print(pygame.mouse.get_pos())
         #elif event.type == pygame.KEYDOWN:
         #    print(event.key)
         #    if event.key == 274:
