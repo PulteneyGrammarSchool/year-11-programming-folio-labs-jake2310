@@ -55,6 +55,7 @@ while not done:
             print(pygame.mouse.get_pos())
         elif event.type == pygame.KEYDOWN:
             print(event.key, 'this is the key')
+
             if event.key == 32:
                 print('done')
                 down = True
@@ -120,7 +121,10 @@ while not done:
     lives(life)
     pygame.display.flip()
 
+    # This limits the while loop to a max of 60 times per second.
+    # Leave this out and we will use all CPU we can.
     print(tick)
     clock.tick(60)
 
+# Be IDLE friendly
 pygame.quit()
